@@ -55,7 +55,7 @@ router.post('/', [
 
             const payload = {
                 user: {
-                    id: user.is
+                    id: user.id
                 }
             }
 
