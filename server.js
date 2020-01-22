@@ -6,10 +6,10 @@ const app = express();
 // Connect Database
 connectDB()
 
-app.get('/', (req, res) => res.json({
-    msg: 'welcome to employee records api'
-})
-)
+// Middleware
+app.use(express.json({ extended: false }))
+
+
 
 
 // Api Routes
